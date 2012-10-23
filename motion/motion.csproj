@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4799C73-DEE9-48F2-B626-32149CC30976}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>motion</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>motion</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ManifestCertificateThumbprint>CA60C7B087BEA55F63B3A220A499AF313ECCDB5E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>motion_1_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetZone>Internet</TargetZone>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>C:\Documents and Settings\Scott\Desktop\Shared Desktop\Projects\AssemblyRequired\Week 7 - Baby Camera\deploy\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.yoursite.com/webcam/</InstallUrl>
+    <SupportUrl>http://www.computerzen.com</SupportUrl>
+    <ProductName>Motion</ProductName>
+    <PublisherName>Scott Hanselman - ComputerZen</PublisherName>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=1.1.0.0, Culture=neutral, PublicKeyToken=9a0d19ffd4e7fe67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging, Version=2.1.0.34196, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=1.0.2058.34196, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="dshow, Version=1.0.2145.23240, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\dshow.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Tiger.Video.VFW, Version=1.0.2137.954, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\references\Tiger.Video.VFW.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Camera.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CameraWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CaptureDeviceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\Datamanager.cs" />
+    <Compile Include="DatabaseManager\Firetake.cs" />
+    <Compile Include="DatabaseManager\Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager\Progress.Designer.cs">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\Results.cs" />
+    <Compile Include="DatabaseManager\Squad.cs" />
+    <Compile Include="DatabaseManager\Student.cs" />
+    <Compile Include="DatabaseManager\Teacher.cs" />
+    <Compile Include="IMotionDetector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MotionDetector1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SentImage.cs" />
+    <Compile Include="sequreMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sequreMarks.Designer.cs">
+      <DependentUpon>sequreMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnsafeBitmap.cs" />
+    <Compile Include="VideoSource\ByteArrayUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VideoSource\CaptureDevice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VideoSource\Events.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VideoSource\IVideoSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VideoSource\JPEGSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VideoSource\MJPEGSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VideoSource\VideoFileSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VideoSource\VideoStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="App1.ico" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\start.jpg" />
+    <None Include="Resources\03image-129.jpg" />
+    <None Include="Resources\clear.gif" />
+    <None Include="Resources\round1.gif" />
+    <None Include="Resources\round.gif" />
+    <None Include="Resources\Безимени-1.gif" />
+    <None Include="Resources\Press4.gif" />
+    <None Include="Resources\us.png" />
+    <None Include="Resources\cr.png" />
+    <None Include="Resources\Untitled.png" />
+    <None Include="Resources\kombi.gif" />
+    <None Include="Resources\icon designs_4bcbb6bbdc11c.jpg" />
+    <None Include="Resources\Mshn.bmp" />
+    <EmbeddedResource Include="CameraWindow.resx">
+      <DependentUpon>CameraWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaptureDeviceForm.resx">
+      <DependentUpon>CaptureDeviceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseManager\Progress.resx">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMSForm.resx">
+      <DependentUpon>MMSForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\d1a.gif" />
+    <EmbeddedResource Include="Resources\d1b.gif" />
+    <EmbeddedResource Include="Resources\d2a.gif" />
+    <EmbeddedResource Include="Resources\d2b.gif" />
+    <EmbeddedResource Include="Resources\down.gif" />
+    <EmbeddedResource Include="Resources\left.gif" />
+    <EmbeddedResource Include="Resources\question.gif" />
+    <EmbeddedResource Include="Resources\right.gif" />
+    <EmbeddedResource Include="Resources\up.gif" />
+    <EmbeddedResource Include="sequreMarks.resx">
+      <DependentUpon>sequreMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="App.ico" />
+    <None Include="App.config" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\kl\LaserGesture\ChatClient\ChatClient.csproj">
+      <Project>{4D541CA1-1D32-4F23-A48B-E649E26E63B0}</Project>
+      <Name>ChatClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\kl\LaserGesture\CommandClient\CommandClient.csproj">
+      <Project>{69BBC64F-1EEB-4A16-9FCE-7667BA0C0338}</Project>
+      <Name>CommandClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\kl\LaserGesture\CommandServer\CommandServer.csproj">
+      <Project>{1FEECF3C-ACFA-4FCE-86A5-5CCB4B99EC75}</Project>
+      <Name>CommandServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\kl\LaserGesture\ConsoleServer\ConsoleServer.csproj">
+      <Project>{10CF6B42-1A77-4E7C-956B-B8050C1EFF01}</Project>
+      <Name>ConsoleServer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
